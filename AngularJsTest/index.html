@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head> <!-- we load all the resources we need -->
+    <link rel="stylesheet" type="text/css" href="resources/css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="resources/css/style.css" />
+    <script type="text/javascript" src="resources/js/angular.min.js"></script>
+    <script type="text/javascript" src="module/treeModule.js"></script>
+  </head>
+  
+  <!-- We set the modle and controller that we will use  -->
+  <body class="list-group" ng-app="treeApplication" ng-controller="TreeCtrl as tree">
+    <header>
+		<h1 class="text-center">Here is the tree</h1>
+    </header>
+	
+	<!-- We start to display tree by calling custom template -->
+	<ul>
+		<li ng-repeat="data in tree" ng-include="'item-block.html'"></li>
+	</ul>
+	
+	<!-- Button binded to save action -->
+	<button class="btn-save btn btn-lg btn-default" ng-click="save(tree)">Save</button>
+	
+  </body>
+</html>

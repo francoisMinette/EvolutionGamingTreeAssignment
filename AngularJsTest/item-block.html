@@ -1,0 +1,13 @@
+<!-- here is our custom template in charge of displaying all the nodes of the tree / this is recursive way -->
+
+
+<button class="btn btn-warning" ng-click="changeDisplayNodes(data)" ng-show="data.nodes.length > 0">{{data.displayText}}</button>
+
+<span class="label label-info">{{data.name}}</span>
+
+<button class="btn btn-success" ng-click="add(data)">+</button>
+<button class="btn btn-danger" ng-click="remove(data.name, tree)">X</button>
+
+<ul ng-show="data.display">
+	<li ng-repeat="data in data.nodes" ng-include="'item-block.html'"></li>
+</ul>
