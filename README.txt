@@ -4,6 +4,7 @@ How to test the module :
 - If the file does not exist or if the file is empty, then it will create a simple tree with one node.
 - On the html page you can ADD, REMOVE, HIDE / SHOW children elements.
 - You can also SAVE the state of the tree on the page. if you restart / refresh the page then it will load the tree as it was saved previously.
+- Important information : the data will note be saved / loaded if the test is not done on a server
 
 
 Additional info, what did I use :

@@ -1,6 +1,7 @@
 <?php
 /*
- * php handler that deals with filling data in file
+ * php handler that deals with filling data in file.
+ * the data will note be saved / loaded if the test is not done on a server
 */
 
 $file = 'database.txt';
